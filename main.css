@@ -1,0 +1,304 @@
+body {
+    background-color: #f0f0f0;
+    background: url(cloudbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {    
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom, #072a4a, #2f4c69, #547089, #7c96ab, #a6becd);
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #FEF7FF;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #FEF7FF;
+}
+
+
+
+.navbar-toggler {
+    background-color: #fff; 
+}
+
+.navbar-brand {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    padding-left: 20px;
+    flex-direction: column;
+    color: #FEF7FF;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Eredeti szöveg szín */
+    transition: color 0.3s ease; /* Színváltás animáció */
+}
+.navbar-nav .nav-link:hover {
+    color: #000000; /* Új szöveg szín, amikor fölé viszed az egeret */
+}
+
+.nav-img {
+    padding-left: 20px;
+}
+
+.search-bar {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.error-message {
+    font-size: 20px;
+}
+
+#weather-container {
+    
+}
+
+
+.locationWindow {
+    padding-top: 20px;
+    background-image: linear-gradient(to right top, #ffffff, #d5d6e4, #a7b0ca, #748db1, #346c97);
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.weather-data {
+    padding-top: 10px;
+    padding-bottom: 245px;
+}
+
+#more-info {
+    background-image: linear-gradient(to left top, #072a4a, #2f4c69, #547089, #7c96ab, #a6becd);
+    opacity: 0.9;
+    border-radius: 10px;
+    font-family: "Ovo", serif;
+    font-size: 20px;
+}
+
+.weather-alert {
+    margin: auto;
+    padding: 30px;
+    width: 90%;
+    color: #000000;
+    font-weight: bold;
+}
+
+.alert-icon {
+    font-size: 50px;
+}
+
+.card-body {
+        
+
+}
+
+.bi.bi-geo-alt {
+    font-size: 40px;
+    color: #FEF7FF;
+}
+
+
+.weather-data {
+    padding-left: 20px;
+}
+
+.weather-box {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.weather-box .weather {
+    padding-bottom: 50px;
+}
+
+.weather-box img {
+    width: 60%;
+}
+
+.weather-box .location {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.weather-box .temperature {
+    position: relative;
+    font-size: 64px;
+    line-height: 1;
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.weather-box .temperature span {
+    position: absolute;
+    font-size: 24px;
+    margin-left: 4px;
+}
+
+.weather-box .description {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.weather-details > div {
+    width: calc(33.33% - 20px); /* Osztás 3 részre, mínusz a margin */
+    margin: 0 10px; /* Margin hozzáadva a szélek közé */
+    padding: 0 10px; /* Padding hozzáadva a szélekhez */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.weather-details .humidity {
+    justify-content: flex-start;
+}
+
+.weather-details .wind {
+    justify-content: center; /* Flex-start-ról centerre változtatva */
+}
+
+.weather-details .rain {
+    justify-content: flex-end;
+}
+
+
+.weather-details i {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.weather-details span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.weather-details p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.time-now {
+    font-size: 25px;
+    font-weight: 700;
+}
+  
+.wrapper-icon-hour1 {
+    color: #ffffff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body .col-2 strong {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-section {
+    background-color: #40565c7c;
+    font-family: "Ovo", serif;
+}
+
+.about-text {
+    background-color: #86868679;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+/* Animáció hozzáadása az ikonhoz */
+@keyframes searchIconAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Alapértelmezett stílusok */
+#search-icon {
+    animation: none; /* Animáció alapértelmezetten kikapcsolva */
+    transition: transform 0.3s; /* Átmenet az animáció kikapcsolásához */
+}
+
+/* Aktív stílusok (animáció elindítása) */
+#search-button:hover #search-icon {
+    animation: searchIconAnimation 0.5s infinite; /* Animáció elindítása */
+}
+
+/* Animáció hozzáadása a kereső sávjához */
+@keyframes searchInputAnimationIn {
+    0% {
+        width: 200px; /* Kezdő szélesség */
+        padding: 0 15px; /* Kezdő padding */
+    } 
+    100% {
+        width: 250px; /* Végső szélesség */
+        padding: 0 20px; /* Végső padding */
+    } 
+}
+
+@keyframes searchInputAnimationOut {
+    0% {
+        width: 250px; /* Kezdő szélesség */
+        padding: 0 20px; /* Kezdő padding */
+    } 
+    100% {
+        width: 200px; /* Végső szélesség */
+        padding: 0 15px; /* Végső padding */
+    } 
+}
+
+/* Aktív stílusok (animáció elindítása) */
+#city-input {
+    width: 200px; /* Kezdő szélesség */
+    padding: 0 15px; /* Kezdő padding */
+    transition: width 0.5s ease, padding 0.5s ease; /* Átmenet hozzáadása az animációhoz */
+}
+
+#city-input:hover {
+    animation: searchInputAnimationIn 0.5s forwards; /* Animáció elindítása és megtartása a végén */
+}
+
+#city-input:not(:hover) {
+    animation: searchInputAnimationOut 0.5s forwards; /* Animáció elindítása és megtartása a végén */
+}
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        display: none; /* Az Időjárás alkalmazás szöveg elrejtése */
+    }
+    .nav-img {
+        margin: auto; /* A kép középre igazítása */
+        width: 100px; /* Az eredeti szélesség beállítása */
+        height: 94px; /* Az eredeti magasság beállítása */
+    }
+}
+
+@media (max-width: 767px) {
+    .weather-data {
+        padding-bottom: 100px !important;
+    }
+}
+
+
+
+
+

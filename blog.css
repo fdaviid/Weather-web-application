@@ -1,0 +1,64 @@
+.card {
+    margin-bottom: 20px;
+  }
+
+  body {
+    background-image: linear-gradient(to right top, #aad6ff, #bad0f1, #c3cce3, #c7c8d4, #c6c6c6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.welcome {
+    font-family: "Ovo", serif;
+    color: #000305;
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom, #072a4a, #2f4c69, #547089, #7c96ab, #a6becd);
+
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #FEF7FF;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    color: #FEF7FF;
+}
+
+.navbar-toggler {
+    background-color: #fff; 
+}
+
+.navbar-brand {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    padding-left: 20px;
+    flex-direction: column;
+    color: #FEF7FF;
+}
+
+.nav-img {
+    padding-left: 20px;
+}
+
+.about-section {
+    background-color: #40565c7c;
+    font-family: "Ovo", serif;
+}
+
+.about-text {
+    background-color: #86868679;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    opacity: 0.9;
+  }
